@@ -1,0 +1,47 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 700px;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+.name_input,
+.email_input,
+.password_input,
+.password_confirm_input {
+    width: 680px;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+.register_button {
+    width: 680px;
+    height: 60px;
+    background-color: black;
+    color: #FFFFFF;
+    margin-top: 105px;
+    font-size: 26px;
+}
+
+.login_link {
+    font-size: 20px;
+    color: #0073CC;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.error {
+    color: red;
+}

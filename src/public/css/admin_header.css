@@ -1,0 +1,28 @@
+.header_inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.header_nav {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
+}
+
+.nav_btn {
+    text-decoration: none;
+    color:#ffff;
+    background-color: black;
+    border:none;
+}
+
+.logout_form {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}

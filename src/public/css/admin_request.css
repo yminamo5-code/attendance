@@ -1,0 +1,49 @@
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.tabs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+    width: 900px;
+    padding-bottom: 5px;
+}
+
+.tab-button {
+    all: unset;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tab-button.active {
+    font-weight: bold;
+}
+
+table {
+    width: 900px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    table-layout: fixed;
+}
+
+th,
+td {
+    width: 150px;
+    text-align: center;
+    padding: 8px 0;
+}
+
+tr {
+    border-bottom: 1px solid #000;
+}
+td a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.error {
+    color: red;
+}

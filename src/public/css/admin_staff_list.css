@@ -1,0 +1,108 @@
+/* 全体レイアウト */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+/* 見出し */
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    border-left: 6px solid #4A90E2;
+    padding-left: 10px;
+    color: #333;
+}
+
+/* 月ナビ */
+.month-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.btn-month {
+    background-color: transparent;
+    color: #4A90E2;
+    border: 1px solid #4A90E2;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-month:hover {
+    background-color: #4A90E2;
+    color: white;
+}
+
+.current-month {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0 15px;
+}
+
+/* テーブル */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+/* 横線だけにする */
+table th,
+table td {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+table th {
+    font-weight: bold;
+}
+
+/* 偶数行の背景色なし */
+table tr:nth-child(even) {
+    background-color: transparent;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+    /* 軽くホバーのみ */
+}
+
+/* 詳細ボタン */
+.btn {
+    background-color: transparent;
+    color: black;
+    padding: 5px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.btn.disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+
+    table th,
+    table td {
+        font-size: 0.85rem;
+        padding: 6px 8px;
+    }
+
+    .btn-month {
+        padding: 4px 10px;
+        font-size: 0.85rem;
+    }
+}
