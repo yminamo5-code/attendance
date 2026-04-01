@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\AttendanceApplication;
 use App\Models\BreaktimeApplication;
+use App\Http\Requests\LoginRequest;
+use Illuminate\Validation\ValidationException;
 
 
 class AdminAuthController extends Controller
@@ -20,7 +22,7 @@ class AdminAuthController extends Controller
         return view('auth.admin_login');
     }
 
-    public function login(Request $request)
+    public function login(LoginRequest $request)
     {
         $credentials = $request->only('email', 'password');
         $credentials['role'] = 1;
